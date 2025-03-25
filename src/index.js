@@ -14,7 +14,7 @@ const loadCharacters = () => {
           charButton.textContent = character.name;
           charButton.addEventListener("click", () => displayCharacter(character));
           characterBar.appendChild(charButton);
-        });
+        }); 
       })
       .catch(err => console.error("Error fetching characters:", err));
   };
@@ -74,7 +74,8 @@ const loadCharacters = () => {
   document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM fully loaded and parsed.");
     loadCharacters();
-  });
+  }); 
+
   
   
   
